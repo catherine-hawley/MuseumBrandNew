@@ -4,9 +4,18 @@
   <title>Collections - Museum</title>
   <link rel="stylesheet" href="../css/style.css">
 
- <!---- <style>
+  <style>
+  .submenu {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px !important; 
+      padding: 15px 0;
+    }
+
     .collection-item {
-      display: flex !important;
+      display: flex;
+      background-color: green;
       flex-direction: row;
       align-items: flex-start;
       gap: 2rem;
@@ -23,9 +32,10 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
-    .field-group {
-      margin-bottom: 1.5rem;
-    }
+   .field-group {
+  flex: 1;
+  min-width: 250px; 
+}
 
     .field-group p {
       margin: 0.5rem 0;
@@ -37,13 +47,20 @@
       font-size: 1.8rem;
     }
 
+.artifact-details {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem; /* optional: adds spacing between columns */
+  flex-wrap: wrap; /* optional: allows wrapping on smaller screens */
+}
+
     .artifact-details h2 {
       width: 100%;
       margin-top: 0;
       font-size: 1.8rem;
       flex-basis: 100%;
     }
-  </style>-->
+  </style>
 </head>
 
 <body>
@@ -72,7 +89,7 @@
         <img src="../images/collections/artifact1.jpg" style="width:250px;" alt="Composite Halibut Hooks" class="artifact-img" />
       
         <div class="artifact-details">
-          <div class="field-group">
+          <div class="field-group col">
             <h2>Composite Halibut Hooks (Set of 3)</h2>
             <p><em>Museum ID: PNW-2018-0347</em></p>
             <p><strong>Material:</strong> Western red cedar shank, deer antler barb, spruce root cordage</p>
@@ -82,13 +99,13 @@
             <p><strong>Location Found:</strong> Tseycum Village Site, Saanich Peninsula, Vancouver Island, BC</p>
           </div>
         
-          <div class="field-group">
+          <div class="field-group col">
             <h3>Use and Function</h3>
             <p><strong>Likely Purpose:</strong> Deep-water halibut fishing at depths of 50-200+ meters</p>
             <p><strong>Evidence of Use:</strong> Smooth wear patterns from handling and line friction, microscopic striations on barb tips indicating contact with bone/cartilage</p>
           </div>
         
-          <div class="field-group">
+          <div class="field-group col">
             <h3>Cultural Context</h3>
             <p><strong>Symbolism:</strong> Fishing hooks held deep spiritual meaning in Coast Salish culture, symbolizing connection between human world and sea realm</p>
             <p><strong>Cataloged by:</strong> Dr. Sarah Chen, Head of Foodways Collection</p>
