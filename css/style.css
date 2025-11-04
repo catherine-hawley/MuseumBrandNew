@@ -3,14 +3,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Tahoma', sans-serif;
 }
 
 body {
   background-image: url('../images/museum_background.jpg'); 
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #F4EFE3;
   line-height: 1.6;
 }
 
