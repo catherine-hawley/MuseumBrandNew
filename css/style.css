@@ -17,6 +17,7 @@ body {
 
 header {
   background-color: #2f4f4f;
+  padding-bottom: 30px;
 }
 
 
@@ -88,7 +89,7 @@ button:hover {
   font-size: 1.8em;
 }
 
-/* Grid layout for info boxes */
+/* Grid layout for info boxes 
 .info-grid {
   display: flex;
   justify-content: space-between;
