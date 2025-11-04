@@ -23,6 +23,8 @@ header {
 
 /* Container for text */
 .container {
+  display: grid;
+  max-width: max-content;
   background-color: #2f4f4f;
   padding: 30px;
   max-width: 960px;
