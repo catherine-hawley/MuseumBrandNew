@@ -3,37 +3,43 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Tahoma', sans-serif;
+
+  /* border: 1px solid red; */
+
 }
 
 body {
-  background-image: url('../images/museum_background.jpg'); 
+  background-image: url('../images/museum_background.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #F4EFE3;
   line-height: 1.6;
 }
 
-/*body.page-secondary {
-  background-color: #2f4f4f; 
-  background-image: none;
-  color: #fff;
-}*/
 
 header {
   background-color: #2f4f4f;
+  padding-bottom: 60px;
 }
 
 
 /* Container for text */
 .container {
+  display: flex;
+  /* grid: auto auto / auto auto auto auto;  */
   background-color: #2f4f4f;
+  flex-direction: column;
   padding: 30px;
   max-width: 960px;
   margin: 40px auto;
   border-radius: 10px;
 }
 
+.intro {
+  display: flex;
+  justify-content: center;
+}
 
 .container-fluid {
   max-width: 1200px;
@@ -87,6 +93,10 @@ button:hover {
 }
 
 /* Section styling */
+.intro {
+  display: flex;
+}
+
 .intro h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -103,55 +113,57 @@ button:hover {
 
 .info-box {
   background-color: #dfeeea;
-  color: black;
+  color: #F4EFE3;
   padding: 20px;
   flex: 1;
   text-align: center;
   border-radius: 8px;
+  height: 450px;
 }
 
 .collection-item {
-      display: flex;
-      background-color: green;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 2rem;
-      margin-bottom: 3rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 2rem;
-    }
-
-    .artifact-img {
-      width: 300px;
-      height: auto;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-
-    .field-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .field-group p {
-      margin: 0.5rem 0;
-      line-height: 1.4;
-    }
-
-    .collection-item h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-    }
-
-    .artifact-details h2 {
-      width: 100%;
-      margin-top: 0;
-      font-size: 1.8rem;
-      flex-basis: 100%;
-
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  opacity: 0.8;
+  display: flex;
+  background-color: green;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2rem;
 }
+
+.artifact-img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.field-group {
+  margin-bottom: 1.5rem;
+}
+
+.field-group p {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.collection-item h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.artifact-details h2 {
+  width: 100%;
+  margin-top: 0;
+  font-size: 1.8rem;
+  flex-basis: 100%;
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #7A9B76;
+    opacity: 0.8;
+  }
